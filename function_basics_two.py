@@ -28,9 +28,9 @@ def valuesGreaterThanSecond(arr):
         return new_list
 print(valuesGreaterThanSecond(test_list1))
 print(valuesGreaterThanSecond(test_list2))
+
 size = 6
 value = 2
-
 def thisLengthThatValue(size,value):
     new_list = []
     for i in range(size):
