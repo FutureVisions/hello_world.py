@@ -10,7 +10,7 @@ class user:
         self.account.withdrawl(amount)
         return self
     def display_user_balance(self):
-        print("User: " + self.name + ", Balance: " + str(self.account.balance))
+        print("User: " + self.name + ", Balance:$" + str(self.account.balance))
 
 class BankAccount:
     def __init__(self, int_rate, balance):
@@ -24,7 +24,7 @@ class BankAccount:
         self.balance -= amount
         return self
     def display_account_info(self):
-        print("Balance: ", (self.balance))
+        print("Balance:$", (self.balance))
         return self
     def yield_interest(self):
         if self.balance > 0:
